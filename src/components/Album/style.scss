@@ -1,0 +1,89 @@
+.album{
+    min-width: 210px;
+    min-height: 190px;
+    position: relative;
+    height: auto;
+    margin: 0.3vw;
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 0 6px black;
+        transition: 200ms;
+    }
+    .album__cover{
+        min-width: 210px;
+        min-height: 140px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media(min-width: 997px){
+    .album{
+        width: 23.7vw;
+        .album__cover{
+            width: 23.7vw;
+            height: 15vw;
+        }
+    }
+}
+@media(max-width: 996px) and (min-width: 724px){
+    .album{
+        width: 31vw;
+        .album__cover{
+            width: 31vw;
+            height: 20vw;
+        }
+    }
+}
+@media(max-width: 723px) and (min-width:490px){
+    .album{
+        width: 46vw;
+        .album__cover{
+            width: 46vw;
+            height: 29vw;
+        }
+    }
+}
+@media(max-width: 489px){
+    .album{
+        width: 99vw;
+        margin: 4px;
+        .album__cover{
+            width: 99vw;
+            height: 61vw;
+        }
+    }
+}
+.album__desc{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    ul{
+        margin: 0;
+        list-style-type: none;
+        margin-left: 10px;
+        padding-left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        &::after{
+            content: '';
+            position: absolute;
+            right: 0; bottom: 0;
+            width: 90px;
+            height: 50px;
+            background: -moz-linear-gradient(left, rgba(255,255,0255, 0.2), white 100%);
+            background: -webkit-linear-gradient(left, rgba(255,255,0255, 0.2), white 100%);
+            background: -o-linear-gradient(left, rgba(255,255,255, 0.2), white 100%);
+            background: -ms-linear-gradient(left, rgba(255,255,255, 0.2), white 100%);
+            background: linear-gradient(to right, rgba(255,255,255, 0.2), white 100%);
+        }
+    }
+}

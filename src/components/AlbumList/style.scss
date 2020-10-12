@@ -1,0 +1,17 @@
+@import "../../../node_modules/@fortawesome/fontawesome-svg-core/styles.css";
+
+// Стили шапки в компоненте UsersList
+
+// Код для добавления символа локации в шапку.
+.subtitle.location:before{
+    font-family: FontAwesome;
+    content: '\f3c5';
+    margin-right: 5px;
+}
+
+.album-list{
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    position: relative;
+}

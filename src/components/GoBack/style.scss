@@ -1,0 +1,22 @@
+@import '../../mixins.scss';
+
+.button{
+    @include clear-button;
+    width: 90px;
+    height: 40px;
+    border: black 3px solid;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    &.goback{
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+    }
+    &:hover{
+        background-color: black;
+        color: white;
+        transition: 200ms;
+    }
+}

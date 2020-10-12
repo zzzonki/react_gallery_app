@@ -1,0 +1,27 @@
+.user__card{
+    height: 30px;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    div{
+        width: 50%;
+        font-family: 'Roboto', sans-serif;
+        white-space: nowrap;
+        &.user__nickname{
+            font-weight: 400;
+            text-align: right;
+            padding: 5px;
+        }
+        &.user__name{
+            font-weight: 100;
+            text-align: left;
+            padding: 5px;
+        }
+    }
+    &:hover{
+        transform: scale(1.2);
+        box-shadow: 0 0 2px black;
+        transition: 200ms;
+        cursor: pointer;
+    }
+}

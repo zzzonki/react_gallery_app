@@ -1,0 +1,29 @@
+// При компиляции стили накладываются на все шапки проекта
+// В компоненте AlbumsList есть уточнение, т.к. шапка немного отличается
+
+.header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    .title{
+        font-size: 44px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        @media screen and (max-width:514px){
+            font-size: 30px;
+        }
+    }
+    .title__line{
+        width: 100px;
+        height: 3px;
+        background-color: black;
+    }
+    .subtitle{
+        font-size: 24px;
+        margin: 20px;
+        font-weight: 400;
+    }
+}
